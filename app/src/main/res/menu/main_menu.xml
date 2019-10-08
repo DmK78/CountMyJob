@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/employers"
+        android:orderInCategory="100"
+        android:title="Работодатели"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/workdays"
+        android:orderInCategory="100"
+        android:title="Рабочие дни"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/reports"
+        android:orderInCategory="100"
+        android:title="Отчеты"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/buttonRepClose"
+        style="@style/MyButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerReports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/MyTextViewBigStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/employer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewBigStyle"
+        android:layout_marginTop="8dp"
+        android:text="@string/interval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerReports" />
+
+    <TextView
+        android:id="@+id/textViewRepData1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewBigStyle"
+        android:layout_marginTop="8dp"
+        android:text="@string/date"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textViewRepData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewBigStyle"
+        android:layout_marginStart="16dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRepData1"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="@+id/textViewRepData1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        style="@style/MyTextViewBigStyle"
+        android:text="@string/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRepData1"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepData1"
+        app:layout_constraintTop_toTopOf="@+id/textViewRepData1" />
+
+    <TextView
+        android:id="@+id/textViewRepHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/MyTextViewBigStyle"
+        android:text="@string/hours"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRepClose"
+        app:layout_constraintEnd_toStartOf="@id/textViewRepForOneHour"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewMediumStyle"
+        android:text="@string/hours"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRepHours"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRepHours"
+        app:layout_constraintStart_toStartOf="@+id/textViewRepHours" />
+
+    <TextView
+        android:id="@+id/textViewRepMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/MyTextViewBigStyle"
+        android:text="@string/salary"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRepClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewRepForOneHour" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewMediumStyle"
+        android:text="@string/salary"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRepMoney"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRepMoney"
+        app:layout_constraintStart_toStartOf="@+id/textViewRepMoney" />
+
+    <TextView
+        android:id="@+id/textViewRepForOneHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/MyTextViewBigStyle"
+        android:text="@string/for_one_hour"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRepClose"
+        app:layout_constraintEnd_toStartOf="@id/textViewRepMoney"
+        app:layout_constraintStart_toEndOf="@+id/textViewRepHours" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/MyTextViewMediumStyle"
+        android:text="@string/for_one_hour"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRepForOneHour"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRepForOneHour"
+        app:layout_constraintStart_toStartOf="@+id/textViewRepForOneHour" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerReports"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg"
+        app:layout_constraintBottom_toTopOf="@+id/textView122"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRepData1" />
+</android.support.constraint.ConstraintLayout>
