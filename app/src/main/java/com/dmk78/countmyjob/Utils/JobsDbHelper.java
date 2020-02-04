@@ -3,7 +3,6 @@ package com.dmk78.countmyjob.Utils;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -50,7 +49,6 @@ public class JobsDbHelper extends SQLiteOpenHelper {
             valueExam.put(JobsDbShema.WorkDaysTable.Cols.MONEY, 2000);
             dbWrite.insert(JobsDbShema.WorkDaysTable.NAME, null, valueExam);
         }*/
-
         return result;
     }
 

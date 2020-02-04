@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.dmk78.countmyjob.Data.Employer;
 import com.dmk78.countmyjob.Data.WorkDay;
 import com.dmk78.countmyjob.Utils.JobsDbHelper;
+import com.dmk78.countmyjob.Utils.ReportAdapter;
 import com.dmk78.countmyjob.Utils.WorkDaysAdapter;
 
 import java.nio.file.Watchable;
@@ -52,7 +53,7 @@ public class ReportsFragment extends Fragment implements
     private List<WorkDay> workDays;
     private RecyclerView recycler;
     private Spinner spinner;
-    private WorkDaysAdapter adapter;
+    private ReportAdapter adapter;
     private int employerId;
     private int moneyTotal = 0, hoursTotal = 0;
     float forOneHour = 0f;
@@ -89,8 +90,8 @@ public class ReportsFragment extends Fragment implements
         workDays = dbHelper.getWorkDaysByEmployer(employerId, textViewData1.getText().toString(), textViewData2.getText().toString());
         recycler = view.findViewById(R.id.recyclerReports);
         recycler.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter = new WorkDaysAdapter(getContext(), workDays);
-        adapter.setOnItemClickListener(new WorkDaysAdapter.OnWorkDayAdapterClickListener() {
+        adapter = new ReportAdapter(getContext(), workDays);
+        /*adapter.setOnItemClickListener(new WorkDaysAdapter.OnWorkDayAdapterClickListener() {
             @Override
             public void onClickWorkDay(WorkDay workDay) {
 
@@ -102,7 +103,7 @@ public class ReportsFragment extends Fragment implements
                 Toast.makeText(getContext(), "Soon", Toast.LENGTH_SHORT).show();
 
             }
-        });
+        });*/
         recycler.setAdapter(adapter);
 
         textViewData1.setOnClickListener(new View.OnClickListener() {
