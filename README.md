@@ -23,9 +23,9 @@ Time Attendance Application
     <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/2.JPG">
     </p>
 
-    <p align="center">
-      <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/3.JPG">
-      </p>
+<p align="center">
+    <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/3.JPG">
+    </p>
 
 
 
