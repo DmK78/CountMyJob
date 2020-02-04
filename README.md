@@ -16,15 +16,15 @@ Time Attendance Application
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DmK78/todolist/master/images/1.JPG">
+  <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/1.JPG">
   </p>
 
   <p align="center">
-    <img src="https://raw.githubusercontent.com/DmK78/todolist/master/images/2.JPG">
+    <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/2.JPG">
     </p>
 
     <p align="center">
-      <img src="https://raw.githubusercontent.com/DmK78/todolist/master/images/3.JPG">
+      <img src="https://raw.githubusercontent.com/DmK78/CountMyJob/master/images/3.JPG">
       </p>
 
 
